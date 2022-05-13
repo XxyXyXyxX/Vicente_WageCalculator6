@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8FDFE1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Wage_Calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="WAGE CALCULATOR"
+        android:textColor="#0D0813"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Full_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="120dp"
+        android:text="Employee Full Name:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="156dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="48dp"
+        android:hint="Name"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/Full_Name"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="@+id/Full_Name"
+        app:layout_constraintTop_toBottomOf="@+id/Full_Name" />
+
+    <TextView
+        android:id="@+id/Hours_Worked"
+        android:layout_width="105dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:text="Hours Worked:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Wage_Calculator" />
+
+    <EditText
+        android:id="@+id/Hours"
+        android:layout_width="154dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:inputType="number"
+        android:hint="Enter Number"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/Hours_Worked"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/Hours_Worked"
+        app:layout_constraintTop_toBottomOf="@+id/Hours_Worked" />
+
+    <RadioGroup
+        android:id="@+id/employeeType"
+        android:layout_width="158dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/Employee_Type"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="@+id/Employee_Type"
+        app:layout_constraintTop_toBottomOf="@+id/Employee_Type">
+
+        <RadioButton
+            android:id="@+id/radioRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regular" />
+
+        <RadioButton
+            android:id="@+id/radioPartime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Part-Time" />
+
+        <RadioButton
+            android:id="@+id/radioProbationary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Probationary" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:background="#BF5D5D"
+        android:backgroundTint="#D37070"
+        android:text="Calculate Wage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Employee_Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:text="Employee Type:"
+        app:layout_constraintEnd_toEndOf="@+id/Wage_Calculator"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/Wage_Calculator"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
